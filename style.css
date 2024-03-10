@@ -177,4 +177,55 @@ img {
 			opacity: 1;
 		}
 	}
+    /* Add these styles to your existing CSS */
+
+/* Add these styles to your existing CSS */
+
+/* Add these styles to your existing CSS */
+
+.navigation {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    background-color: hsl(0 0% 20%);
+    color: hsl(0 0% 98%);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: hsl(0 0% 30%);
+  }
+  
+  .prev-btn {
+    margin-right: 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navigation {
+      top: 0.5rem;
+    }
+  
+    .prev-btn,
+    .next-btn {
+      padding: 0.25rem 0.5rem;
+      font-size: clamp(0.875rem, 2vw, 1rem);
+    }
+  
+    .prev-btn {
+      margin-right: 0.5rem;
+    }
+  }
 }
