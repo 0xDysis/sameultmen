@@ -4,39 +4,33 @@ body, html {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Prevent scrolling */
-    ;
-  }
-  
-  body {
+    background-image: url('Screenshot 2024-03-10 at 16.43.05.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+body {
     display: flex;
-    justify-content: center; /* center content horizontally */
-    align-items: center; /* center content vertically */
-  }
-  
-  #fluid_container {
-    position: absolute; /* make the container take the full viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
-    z-index: 0;
-  }
-  
-  .center-image {
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Ensure that the .center-image is positioned relative to the body */
+}
+
+
+
+.center-image {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 300px; 
     height: 300px; 
-    transform: translate(-50%, -50%); 
-    z-index: 1;
-  }
-  
-  .center-image a img {
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: 2; /* Ensure it's above the #fluid_container */
+}
+
+.center-image a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
+}

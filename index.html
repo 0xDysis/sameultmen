@@ -5,23 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>same ultmen</title>
   <link rel="icon" href="Screenshot 2024-03-10 at 16.43.13.png" type="image/png"> 
-  <link rel="stylesheet" href="index.css">
+  
   <!-- Open Graph tags -->
   <meta property="og:title" content="same ultmen" />
   <meta property="og:image" content="https://www.dysis.eu/xxx.png" />
   <meta property="og:description" content="same ultmen will deliver us from ignorance" />
   <meta property="og:url" content="https://www.dysis.eu" />
   <meta property="og:type" content="website" />
+  <style>
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      background-image: url('Screenshot 2024-03-10 at 16.43.05.png'); /* Set the background image */
+      background-size: cover; /* Cover the entire page */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      color: white; /* Set text color to white */
+    }
+
+    /* Ensure content is scrollable */
+    body {
+      overflow-y: auto; /* Enable vertical scrolling */
+      display: block; /* Use block layout */
+      position: relative; /* Ensure positioning is relative */
+      padding-top: 60px; /* Adjust based on the height of your navbar */
+    }
+
+    /* Navbar styles */
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333; /* Adjust the color as needed */
+  position: fixed;
+  width: 98%;
+  top: 0;
+  z-index: 1000; /* High z-index to ensure it's clickable */
+}
+
+.nav-logo img {
+  height: 50px; /* Adjust the size as needed */
+}
+
+.nav-links {
+  display: flex; /* Align links in a row */
+  flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px; /* Adjust the size as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+    /* Section styles */
+    section {
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: black; /* Set background color to black */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+    }
+
+    /* Adjust the first section to accommodate the image */
+    .center-image {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent; /* Ensure the background is transparent */
+    }
+
+    .center-image a img {
+      max-height: 80vh; /* Adjust the image size */
+      max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+      object-fit: cover; /* Ensure the image covers the area */
+    }
+  </style>
 </head>
-<body onload="fluid.init()">
-  <div id="fluid_container"></div>
-  <div class="content">
+<body>
+  <nav>
+    <div class="nav-logo">
+      <a href="#home">
+        <img src="Screenshot 2024-03-10 at 16.43.13.png" alt="Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#how-to-buy">How to Buy</a>
+    </div>
+  </nav>
+
+  <div class="center-image" id="home">
+    
   </div>
-  <script src="fluid.js"></script>
-  <div class="center-image">
-    <a href="page2.html">
-      <img src="Screenshot 2024-03-10 at 16.43.13.png" alt="Your Image Description">
-    </a>
-  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>The Same Ultmen SLP Token represents more than just a digital asset; it embodies a mission to enlighten and educate. With the core belief that knowledge is the key to liberation, the Same Ultmen token is dedicated to delivering us all from ignorance, fostering a community where information and wisdom are freely shared. Join us in this journey towards enlightenment and be a part of the change we wish to see in the world.</p>
+  </section>
+  
+  <section id="how-to-buy">
+    <h2>How to Buy</h2>
+    <p>Purchasing Same Ultmen tokens is a straightforward process facilitated through the Raydium platform. Follow these simple steps to get started:</p>
+    <ol>
+      <li>First, ensure you have a Solana wallet set up. Phantom and Sollet are popular choices among users.</li>
+      <li>Next, acquire Solana (SOL) tokens, which you can buy from any major cryptocurrency exchange. Transfer these tokens to your Solana wallet.</li>
+      <li>Access the Raydium platform and connect your Solana wallet.</li>
+      <li>Navigate to the 'Swap' section on Raydium, and select SOL as the token you wish to swap from.</li>
+      <li>In the 'To' field, search for and select the Same Ultmen SLP Token.</li>
+      <li>Enter the amount of SOL you wish to swap for Same Ultmen tokens, and confirm the transaction.</li>
+      <li>Once the transaction is confirmed, the Same Ultmen tokens will be deposited into your wallet.</li>
+    </ol>
+    <p>By following these steps, you can easily become a holder of Same Ultmen tokens and join our mission towards a more enlightened world. Remember to always do your own research and consider your investment carefully.</p>
+  </section>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
