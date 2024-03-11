@@ -1,172 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>same ultman</title>
-  <link rel="icon" href="Screenshot 2024-03-10 at 16.43.13.png" type="image/png"> 
-  
-  <!-- Open Graph tags -->
-  <meta property="og:title" content="same ultmen" />
-  <meta property="og:image" content="https://0xdysis.github.io/sameultmen/Screenshot 2024-03-10 at 16.43.13.png" />
-  <meta property="og:description" content="same ultmen will deliver us from ignorance" />
-  <meta property="og:url" content="https://0xdysis.github.io/sameultmen" />
-  <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
-  <style>
-    body, html {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-      background-image: url('Screenshot 2024-03-10 at 16.43.13.png'); /* Set the background image */
-      background-size: cover; /* Cover the entire page */
-      background-position: center; /* Center the background image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      color: white; /* Set text color to white */
-    }
-
-    body {
-      overflow-y: auto; /* Enable vertical scrolling */
-      display: block; /* Use block layout */
-      position: relative; /* Ensure positioning is relative */
-      padding-top: 60px; /* Adjust based on the height of your navbar */
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-      background-color: #bb3d3d00; /* Adjust the color as needed */
-      position: fixed;
-      width: 98%;
-      top: 0;
-      z-index: 1000; /* High z-index to ensure it's clickable */
-    }
-
-    .nav-logo img {
-      height: 50px; /* Adjust the size as needed */
-    }
-
-    .nav-links {
-      display: flex; /* Align links in a row */
-      flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 16px; /* Adjust the size as needed */
-      white-space: nowrap; /* Prevent text from wrapping */
-    }
-    .nav-links a, .buy-same-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px; /* Adjust based on your design preference */
-  line-height: 1.5; /* Ensure vertical alignment */
-}
-
-
-    section {
-      min-height: 100vh;
-      padding: 20px;
-      box-sizing: border-box;
-      background-color: black; /* Set background color to black */
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Center content vertically */
-      align-items: center; /* Center content horizontally */
-    }
-
-    .center-image {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: transparent; /* Ensure the background is transparent */
-    }
-
-    .center-image a img {
-      max-height: 80vh; /* Adjust the image size */
-      max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-      object-fit: cover; /* Ensure the image covers the area */
-    }
-    .buy-same-btn {
-  background-color: #ff4500; /* Orange background for visibility */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Padding for size */
-  font-size: 18px; /* Larger font size */
-  font-weight: bold; /* Bold font for emphasis */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  text-transform: uppercase; /* Uppercase text for emphasis */
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-  margin-left: 20px;
-}
-
-.buy-same-btn:hover {
-  background-color: #e63e00; /* Darker orange on hover for interactive effect */
-}
-
-  </style>
+ 
 </head>
 <body>
-    <nav>
-        <div class="nav-logo">
-          <a href="#home">
-            <img src="Screenshot 2024-03-10 at 16.43.13.png" alt="Logo">
-          </a>
-        </div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#how-to-buy">How to Buy</a>
-          <a href="memes.html">Memes</a>
-          <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a&fixed=out" class="buy-same-btn">BUY $SAME</a>
-        </div>
-      </nav>
-      
-  <div class="center-image" id="home">
-    <!-- Content for the home section can be added here -->
-  </div>
-  <section id="about">
-    <h2>About</h2>
-    <p>The Same Ultman SLP Token represents more than just a digital asset; it embodies a mission to enlighten and educate. With the core belief that knowledge is the key to liberation, the Same Ultmen token is dedicated to delivering us all from ignorance, fostering a community where information and wisdom are freely shared. Join us in this journey towards enlightenment and be a part of the change we wish to see in the world.</p>
-  </section>
-  <section id="how-to-buy">
-    <h2>How to Buy</h2>
-    <p>Purchasing Same Ultman tokens is a straightforward process facilitated through the Raydium platform. Follow these simple steps to get started:</p>
-    <ol>
-      <li>First, ensure you have a Solana wallet set up. Phantom and Sollet are popular choices among users.</li>
-      <li>Next, acquire Solana (SOL) tokens, which you can buy from any major cryptocurrency exchange. Transfer these tokens to your Solana wallet.</li>
-      <li>Access the Raydium platform and connect your Solana wallet.</li>
-      <li>Navigate to the 'Swap' section on Raydium, and select SOL as the token you wish to swap from.</li>
-      <li>In the 'To' field, search for and select the Same Ultmen SLP Token CA: AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a .</li>
-      <li>Enter the amount of SOL you wish to swap for Same Ultmen tokens, and confirm the transaction.</li>
-      <li>Once the transaction is confirmed, the Same Ultmen tokens will be deposited into your wallet.</li>
-    </ol>
     
-  </section>
-  <footer>
-    <p>Contract Address: <a href="https://explorer.solana.com/address/AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a" target="_blank">AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a</a></p>
-    <div class="social-icons">
-      <a href="https://twitter.com/SameUltman" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div id="threeCanvas"></div>
+    
+    <p id="myText">SAME ULTMAN</p>
+    <div class="login-box">
+        
+        <form>
+            <a href="page1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                BUY $SAME
+            </a>
+        </form>
     </div>
-  </footer>
+      
+
+
+
   
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="sketch.js"></script>
 </body>
 </html>

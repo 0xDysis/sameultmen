@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Same Ultman</title>
+  <link rel="icon" href="favicon.png" type="image/png"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Same Ultman" />
+  <meta property="og:image" content="Screenshot 2024-03-10 at 16.43.13.png" />
+  <meta property="og:description" content="Same Ultman will deliver us from ignorance" />
+  <meta property="og:url" content="https://sameultman.xyz" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background: #121212; /* Dark background for modern look */
+      color: #ffffff; /* Light text for contrast */
+      overflow-x: hidden;
+    }
+   /* Applying the custom cursor */
+body, a, button {
+  cursor: url('cursor.png'), auto;
+}
+
+
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: transparent;
+      position: fixed;
+      top: 0;
+      width: 95%;
+      z-index: 10;
+    }
+
+    .nav-logo img {
+      height: 40px;
+    }
+
+    .nav-links a, .buy-same-btn {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover, .buy-same-btn:hover {
+      color: #ff4500;
+    }
+
+    .buy-same-btn {
+      background-color: #ff4500;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    section {
+      padding: 60px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      margin: 0 0 20px 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    p, li {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    ol {
+      list-style-position: inside;
+      text-align: left;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #202020; /* Dark background for contrast */
+      color: #ffffff;
+    }
+
+    .footer-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .footer-link {
+      color: #ff4500;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #e63e00;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: #ffffff;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ff4500;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .nav-links a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .buy-same-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      .nav-logo img {
+        height: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .nav-logo, .nav-links {
+        width: 100%;
+        text-align: center;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a, .buy-same-btn {
+        font-size: 12px;
+        padding: 5px;
+        margin: 0 5px;
+      }
+    }
+
+    /* Fade-in effect */
+    .fade-in {
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <a href="#home">
+        <img src="Screenshot 2024-03-10 at 16.43.13.png" alt="Logo" class="fade-in">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#how-to-buy">How to Buy</a>
+      <a href="memes.html">Memes</a>
+      <a href="https://raydium.io/swap/" class="buy-same-btn">BUY $SAME</a>
+    </div>
+  </nav>
+
+  <div class="center-image" id="home">
+    <!-- Content for the home section can be added here -->
+  </div>
+  <section id="about">
+    <h2>About</h2>
+    <p>The Same Ultman SLP Token represents more than just a digital asset; it embodies a mission to enlighten and educate. With the core belief that knowledge is the key to liberation, the Same Ultmen token is dedicated to delivering us all from ignorance, fostering a community where information and wisdom are freely shared. Join us in this journey towards enlightenment and be a part of the change we wish to see in the world.</p>
+  </section>
+  <section id="how-to-buy">
+    <h2>How to Buy</h2>
+    <p>Purchasing Same Ultman tokens is a straightforward process facilitated through the Raydium platform. Follow these simple steps to get started:</p>
+    <ol>
+      <li>First, ensure you have a Solana wallet set up. Phantom and Sollet are popular choices among users.</li>
+      <li>Next, acquire Solana (SOL) tokens, which you can buy from any major cryptocurrency exchange. Transfer these tokens to your Solana wallet.</li>
+      <li>Access the Raydium platform and connect your Solana wallet.</li>
+      <li>Navigate to the 'Swap' section on Raydium, and select SOL as the token you wish to swap from.</li>
+      <li>In the 'To' field, search for and select the Same Ultmen SLP Token CA: AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a .</li>
+      <li>Enter the amount of SOL you wish to swap for Same Ultmen tokens, and confirm the transaction.</li>
+      <li>Once the transaction is confirmed, the Same Ultmen tokens will be deposited into your wallet.</li>
+    </ol>
+    
+  </section>
+  <footer>
+    <div class="footer-container">
+      <p>Discover more about Same Ultman:</p>
+      <a href="https://explorer.solana.com/address/AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a" target="_blank" class="footer-link">Contract Address: AEUW5H9DDiBgoikPQWQG7tYt8c5p3N1JrVFWBTw9Kc5a</a>
+      <div class="social-icons">
+        <!-- Example for adding a Twitter icon. Replace with actual links and icons as needed. -->
+        <a href="https://twitter.com/SameUltman" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in effect
+    window.onload = function() {
+      document.querySelectorAll('.fade-in').forEach(function(element) {
+        element.style.opacity = 1;
+      });
+    };
+  </script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
