@@ -1,0 +1,26 @@
+{
+    "name": "Same Ultman Token",
+    "symbol": "SAME",
+    "description": "same ultman will deliver us from ignorance",
+    "seller_fee_basis_points": 100, 
+    "image": "https://github.com/0xDysis/sameultmen/blob/main/Screenshot%202024-03-10%20at%2016.43.13.png",
+    "external_url": "https://samultman.xyz",
+    "attributes": [], 
+    "properties": {
+      "files": [
+        {
+          "uri": "https://github.com/0xDysis/sameultmen/blob/main/Screenshot%202024-03-10%20at%2016.43.13.png",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "j6Tvb89PDWYACjQHdeHzhQyw9kKxZa5frG33CX9mrX6",
+          "share": 100
+        }
+      ]
+      
+    }
+  }
+  
